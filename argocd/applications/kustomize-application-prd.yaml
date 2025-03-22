@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/rahulagr96/argocd-kubernetes-gitops-tutorial.git
     targetRevision: HEAD
-    path: kustomize/overlays/prd
+    path: kustomize/overlays/prod
   destination:
     server: https://kubernetes.default.svc
     namespace: grade-demo
