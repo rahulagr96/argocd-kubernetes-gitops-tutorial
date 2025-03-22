@@ -39,15 +39,15 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 Here are commands that you can use to add grades to the Grade Submission API. **Windows Users should use Git Bash**.
 
 ```bash
-curl -X POST http://localhost:<port>/grades \
+curl -X POST http://localhost:31000/grades \
   -H "Content-Type: application/json" \
   -d '{"name": "Harry", "subject": "Defense Against Dark Arts", "score": 95}'
 
-curl -X POST http://localhost:<port>/grades \
+curl -X POST http://localhost:31000/grades \
   -H "Content-Type: application/json" \
   -d '{"name": "Ron", "subject": "Charms", "score": 82}'
 
-curl -X POST http://localhost:<port>/grades \
+curl -X POST http://localhost:31000/grades \
   -H "Content-Type: application/json" \
   -d '{"name": "Hermione", "subject": "Potions", "score": 98}'
 ```
@@ -55,7 +55,7 @@ curl -X POST http://localhost:<port>/grades \
 To verify, you can get all grades with:
 
 ```bash
-curl http://localhost:<port>/grades
+curl http://localhost:31000/grades
 ```
 
 ## Kubernetes Training
